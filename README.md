@@ -1,17 +1,18 @@
 # Warehouse Testbed for Reinforcement Learning
 
-This repository provides a configurable **warehouse simulation environment** for benchmarking **reinforcement learning (RL)** algorithms.
+This repository provides a configurable **warehouse simulation environment and reproducible testbed** for benchmarking reinforcement learning (RL) algorithms.
 
-It models:
+The environment models:
 - stochastic item arrivals
 - dynamic order generation
 - constrained agent movement
 - action masking (invalid actions filtered)
 
-It also supports:
-- reproducible scenario generation
-- dataset export (CSV)
-- PPO / MaskablePPO training
+Built on top of this environment, the testbed enables:
+- reproducible scenario generation across heterogeneous warehouse layouts
+- evaluation under diverse operating conditions (from low-load to highly congested settings)
+- dataset export (CSV) for offline analysis
+- training and benchmarking with PPO / MaskablePPO
 
 ---
 
